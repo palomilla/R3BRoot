@@ -1,4 +1,4 @@
-void runsim(Int_t nEvents = 0)
+void runsim(Int_t nEvents = 1)
 {
 
   // =========== Configuration area =============================
@@ -9,11 +9,11 @@ void runsim(Int_t nEvents = 0)
   Bool_t fVis = true;                // Store tracks for visualization
   Bool_t fUserPList= false;          // Use of R3B special physics list
   Bool_t fR3BMagnet = true;          // Magnetic field definition
-  Bool_t fCaloHitFinder = true;      // Apply hit finder task
+  Bool_t fCaloHitFinder = false;      // Apply hit finder task
 
   TString fMC = "TGeant4";           // MonteCarlo engine: TGeant3, TGeant4, TFluka
-  TString fGenerator = "box";        // Event generator type: box, gammas, r3b, ion, ascii
-  TString fEventFile = "";           // Input event file in the case of ascii generator
+  TString fGenerator = "ascii";        // Event generator type: box, gammas, r3b, ion, ascii
+  TString fEventFile = "r3broot_22O_21O.txt";           // Input event file in the case of ascii generator
 
   Int_t    fFieldMap = -1;           // Magentic field map selector
   Double_t fMeasCurrent = 2000.;     // Magnetic field current
@@ -21,7 +21,7 @@ void runsim(Int_t nEvents = 0)
 
   // ---------------  Detector selection: true - false -------------------------------
 
-  Bool_t  fTarget = true;            // Target
+  Bool_t  fTarget = false;            // Target
   TString fTargetType = "LiH";       // Target selection: LeadTarget, Para, Para45, LiH
 
   Bool_t  fVesselcool = false;       // SiTracker Cooling  
@@ -33,10 +33,10 @@ void runsim(Int_t nEvents = 0)
   Bool_t  fGlad = false;             // Glad Magnet
   TString fGladGeo = "glad_v13a.geo.root";
 
-  Bool_t  fXBall = false;            // Crystal Ball
+  Bool_t  fXBall = true;            // Crystal Ball
   TString fXBallGeo = "cal_v13a.geo.root";
 
-  Bool_t  fCalo = true;              // Califa Calorimeter
+  Bool_t  fCalo = false;              // Califa Calorimeter
   TString fCaloGeo = "califa_10_v8.11.geo.root";
   Int_t   fCaloGeoVer = 10;
   Double_t fCaloNonU = 1.0; //Non-uniformity: 1 means +-1% max deviation   
@@ -154,6 +154,7 @@ void runsim(Int_t nEvents = 0)
   //Crystal Ball
   if (fXBall && !fCalo) {
     R3BDetector* xball = new R3BXBall("XBall", kTRUE);
+    ((R3BXBall *)xball)->SelectCollectionOption(2);
     xball->SetGeometryFileName(fXBallGeo);
     run->AddModule(xball);
   }
@@ -291,6 +292,11 @@ void runsim(Int_t nEvents = 0)
 	  // add the box generator
 	  primGen->AddGenerator(boxGen);
   } 
+
+  if (fGenerator.CompareTo("ascii") == 0  ) {
+    R3BAsciiGenerator* gen = new R3BAsciiGenerator(fEventFile.Data());
+    primGen->AddGenerator(gen);
+  }
 
   run->SetGenerator(primGen);
 
