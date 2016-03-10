@@ -25,23 +25,23 @@ void Config()
 
 
    // Create the Run Configuration
-   R3BRunConfiguration* runConfiguration
-     = new R3BRunConfiguration("geomRoot", "specialCuts+stackPopper+stepLimiter+specialControls");
+//   R3BRunConfiguration* runConfiguration
+//     = new R3BRunConfiguration("geomRoot", "specialCuts+stackPopper+stepLimiter+specialControls");
 
 /// Create the G4 VMC 
-   TGeant4* geant4 = new TGeant4("TGeant4", "The Geant4 Monte Carlo",
-				 runConfiguration);
+//   TGeant4* geant4 = new TGeant4("TGeant4", "The Geant4 Monte Carlo",
+//				 runConfiguration);
    cout << "-I- R3B Config(): Geant4 with R3B dedicated Physics list " << endl;
    cout << "-I- R3B Config(): has been created..." << endl;
 
 
   // Create Geant4 VMC
   //  
-/*  TGeant4 *geant4 = 0;
+  TGeant4 *geant4 = 0;
   if ( ! gMC ) {
     TG4RunConfiguration* runConfiguration 
       = new TG4RunConfiguration("geomRoot", 
-                                "QGSP_BERT", 
+                                "FTFP_INCLXX_HP_LIV", 
                                 "specialCuts+stackPopper+stepLimiter+specialControls",
                                  true);
 
@@ -51,7 +51,7 @@ void Config()
   } 
   else {
     cout << "Monte Carlo has been already created." << endl;
-  }  */
+  } 
 
 
 

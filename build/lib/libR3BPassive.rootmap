@@ -1,0 +1,15 @@
+[ R3BPassive.so ]
+# List of selected classes
+class R3BCave
+class R3BGeoCave
+class R3BGeoMagnet
+class R3BGeoPassivePar
+class R3BGeoPipe
+class R3BGeoTarget
+class R3BGeoVacVesselCool
+class R3BGladMagnet
+class R3BMagnet
+class R3BPassiveContFact
+class R3BPipe
+class R3BTarget
+class R3BVacVesselCool

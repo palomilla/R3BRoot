@@ -1,0 +1,8 @@
+[ R3Bbase.so ]
+# List of selected classes
+class R3BDetector
+class R3BEventHeader
+class R3BEventHeaderUnpack
+class R3BLmdSource
+class R3BModule
+class R3BTimeStampUnpack

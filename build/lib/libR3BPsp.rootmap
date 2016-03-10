@@ -1,0 +1,7 @@
+[ R3BPsp.so ]
+# List of selected classes
+class R3BGeoPsp
+class R3BPsp
+class R3BPspDigiPar
+class R3BPspDigitizer
+class R3BPspxCal

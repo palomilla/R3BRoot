@@ -1,0 +1,16 @@
+[ R3BCalo.so ]
+# List of selected classes
+class R3BCalo
+class R3BCaloCalibParFinder
+class R3BCaloContFact
+class R3BCaloCrystalAna
+class R3BCaloGeometry
+class R3BCaloHitFinder
+class R3BCaloHitFinderPar
+class R3BCaloMap
+class R3BCaloRawAna
+class R3BCaloUnpack
+class R3BCaloUnpackPar
+class R3BGeoCalo
+class R3BGeoCaloPar
+header R3BCaloUnpackPar.h

@@ -1,0 +1,6 @@
+[ R3BTCal.so ]
+# List of selected classes
+class R3BTCalContFact
+class R3BTCalEngine
+class R3BTCalModulePar
+class R3BTCalPar

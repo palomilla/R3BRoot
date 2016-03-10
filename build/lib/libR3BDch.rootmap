@@ -1,0 +1,10 @@
+[ R3BDch.so ]
+# List of selected classes
+class R3BDch
+class R3BDch2pDigiPar
+class R3BDch2pDigitizer
+class R3BDchContFact
+class R3BDchDigiPar
+class R3BDchDigitizer
+class R3BGeoDch
+class R3BGeoDchPar

@@ -1,0 +1,11 @@
+[ R3BTof.so ]
+# List of selected classes
+class R3BGeoTof
+class R3BGeoTofPar
+class R3BTof
+class R3BTof2pDigiPar
+class R3BTof2pDigitizer
+class R3BTofContFact
+class R3BTofDigiPar
+class R3BTofDigitizer
+class R3BTofUnpack

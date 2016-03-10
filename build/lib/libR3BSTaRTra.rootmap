@@ -1,0 +1,19 @@
+[ R3BSTaRTra.so ]
+# List of selected classes
+class R3BGeoSTaRTra
+class R3BGeoSTaRTraPar
+class R3BSTaRTra
+class R3BSTaRTraContFact
+class R3BSTaRTraDigiPar
+class R3BSTaRTraDigit
+class R3BSTaRTraHitFinder
+class R3BSTaRTrackerEvent
+class R3BStarTrackCalib
+class R3BStarTrackCalibPar
+class R3BStarTrackCalibParFinder
+class R3BStarTrackRawAna
+class R3BStarTrackRawHit
+class R3BStarTrackStripAna
+class R3BStarTrackUnpack
+class R3BStarTrackUnpackPar
+header R3BStarTrackCalibPar.h

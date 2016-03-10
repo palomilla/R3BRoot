@@ -87,7 +87,7 @@ void protonNeutronInfoSimu() {
 	  
 	  // Hits Max per event
 	  for( j = 0; j < crystalHitsPerEvent; j++ ){
-	    if( ( crystalHit[j]->GetEnergy() * 1000 ) > 10.0  ){
+	    if( ( crystalHit[j]->GetEnergy() * 1000 ) > 20.0  ){
 	      if( ( crystalHit[j]->GetTrackPID() == 2212 ) && ( (crystalHit[j]->GetEnergy() * 1000 ) > energyMax[0] ) ){
 		energyMax[0] = crystalHit[j]->GetEnergy() * 1000;
 		crystalMax[0] = crystalHit[j]->GetCrystalNumber();

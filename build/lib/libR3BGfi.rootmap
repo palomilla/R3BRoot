@@ -1,0 +1,8 @@
+[ R3BGfi.so ]
+# List of selected classes
+class R3BGeoGfi
+class R3BGeoGfiPar
+class R3BGfi
+class R3BGfiContFact
+class R3BGfiDigiPar
+class R3BGfiDigitizer

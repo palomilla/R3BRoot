@@ -1,0 +1,6 @@
+[ R3BXBall.so ]
+# List of selected classes
+class R3BGeoXBall
+class R3BGeoXBallPar
+class R3BXBall
+class R3BXBallContFact

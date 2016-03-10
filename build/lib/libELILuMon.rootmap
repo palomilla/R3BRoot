@@ -1,0 +1,6 @@
+[ ELILuMon.so ]
+# List of selected classes
+class ELIGeoLuMon
+class ELIGeoLuMonPar
+class ELILuMon
+class ELILuMonContFact

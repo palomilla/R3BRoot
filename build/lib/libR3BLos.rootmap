@@ -1,0 +1,7 @@
+[ R3BLos.so ]
+# List of selected classes
+class R3BLosHit
+class R3BLosRawHit
+class R3BLosTcal
+class R3BLosTcalFill
+class R3BLosUnpack

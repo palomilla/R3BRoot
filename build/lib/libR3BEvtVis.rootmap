@@ -1,0 +1,8 @@
+[ R3BEvtVis.so ]
+# List of selected classes
+class R3BCaloEventDisplay
+class R3BCaloHitEventDisplay
+class R3BEventManager
+class R3BEventManagerEditor
+class R3BIonName
+class R3BMCTracks

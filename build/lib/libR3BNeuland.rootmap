@@ -1,0 +1,12 @@
+{ decls }
+namespace Neuland {  }
+
+[ R3BNeuland.so ]
+# List of selected classes
+class Neuland::DigitizingEngine
+class R3BNeuland
+class R3BNeulandDigiMon
+class R3BNeulandDigitizer
+class R3BNeulandMCMon
+class R3BNeulandVisualizer
+header DigitizingEngine.h

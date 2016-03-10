@@ -1,0 +1,33 @@
+[ R3BLand.so ]
+# List of selected classes
+class R3BGeoLand
+class R3BGeoLandPar
+class R3BLand
+class R3BLandAna
+class R3BLandContFact
+class R3BLandCosmic1
+class R3BLandDigiPar
+class R3BLandDigitizer
+class R3BLandDigitizerQA
+class R3BLandMapping
+class R3BLandParamRead
+class R3BLandPmt
+class R3BLandRawAna
+class R3BLandRawAnaS438b
+class R3BLandTSync
+class R3BLandTSyncContFact
+class R3BLandTSyncModulePar
+class R3BLandTSyncPar
+class R3BLandTcal
+class R3BLandTcalFill
+class R3BLandTcalTest
+class R3BLandTdiffFill
+class R3BLandUnpack
+class R3BNeuLandCluster
+class R3BNeuLandClusterFinder
+class R3BNeutHit
+class R3BNeutronCalibr2D
+class R3BNeutronTracker
+class R3BNeutronTracker2D
+class R3BPrimPart
+header R3BLandTSyncModulePar.h

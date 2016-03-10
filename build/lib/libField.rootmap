@@ -1,0 +1,9 @@
+[ Field.so ]
+# List of selected classes
+class R3BAladinFieldMap
+class R3BFieldConst
+class R3BFieldContFact
+class R3BFieldCreator
+class R3BFieldMap
+class R3BFieldPar
+class R3BGladFieldMap

@@ -1,4 +1,4 @@
-void runsim(Int_t nEvents = 1)
+void runsim(Int_t nEvents = 1000)
 {
 
   // =========== Configuration area =============================
@@ -7,7 +7,7 @@ void runsim(Int_t nEvents = 1)
   TString ParFile = "sim_par.root";  // Output file for params
 
   Bool_t fVis = true;                // Store tracks for visualization
-  Bool_t fUserPList= false;          // Use of R3B special physics list
+  Bool_t fUserPList= true;          // Use of R3B special physics list
   Bool_t fR3BMagnet = true;          // Magnetic field definition
   Bool_t fCaloHitFinder = false;      // Apply hit finder task
 
